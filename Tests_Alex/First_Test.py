@@ -19,10 +19,12 @@ fig, ax = plot_comparison(ss, ss.GENROU.omega,
                 omega_lt2, a=[0, 1],
                 ylabel="Rotor Speed [Hz]",
                 tsat_header=[r'$\omega$ TSAT 1', r'$\omega$ TSAT 2'],
-                scale=60, left=0, right=1
+                scale=60, left=0, right=1)
 
 fig, ax = plot_comparison(ss, ss.GENROU.v,
                 v_lt2, a=[0, 1],
                 ylabel="Terminal Voltage [pu]",
                 tsat_header=['V TSAT 1', 'V TSAT 2'],
                 left=0, right=10)
+
+
